@@ -18,7 +18,7 @@ class InitializeWorkdirIn extends BaseObject {
     Map appConfig
 
     InitializeWorkdirIn() {
-        this.pipelineGitRepo = new GitRepo("duvalhub", "continuous-deployment-shared-library")
+        this.pipelineGitRepo = new GitRepo("JulienPlomteux", "continuous-deployment-shared-library")
         this.pipelineWorkdir = "jenkins-workdir"
         this.appWorkdir = "app-workdir"
     }
