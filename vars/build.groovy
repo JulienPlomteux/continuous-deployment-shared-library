@@ -12,7 +12,6 @@ def call(BuildRequest buildRequest) {
         String template_path = "${basePath}/templates"
         def script = "${basePath}/scripts/build/build.sh"
         def appBasePath = "${env.APP_WORKDIR}"
-        withConfigServer(buildRequest.getAppName()) {
             withEnv([
                     "IMAGE=${image_name}"
             ]) {
@@ -49,6 +48,5 @@ def call(BuildRequest buildRequest) {
                     }
                 }
             }
-        }
     }
 }
